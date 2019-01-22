@@ -6,4 +6,7 @@ services:
         container_name: socks5
         ports:
             - "2081:1080"
+        environment:
+            - PROXY_USER=fuckrkn
+            - PROXY_PASSWORD=fuckrkn
         restart: unless-stopped
